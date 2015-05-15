@@ -160,9 +160,11 @@ table {
 body {
   font-weight: 400;
   background-color: #a6c5a3;
+  font-family: 'Lato', sans-serif;
 }
 a {
   text-decoration: none;
+  color: #ec6e4e;
 }
 img {
   display: block;
@@ -207,6 +209,7 @@ h2 {
   height: 280px;
   line-height: 280px;
   font-size: 24px;
+  font-weight: 700;
   position: absolute;
   z-index: 2;
   text-align: center;
