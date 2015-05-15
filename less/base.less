@@ -1,0 +1,72 @@
+@width: 900px;
+@padding: 10px;
+@circle_size: @width / 3 - 2 * @padding;
+
+body {
+    // font-family: @font_szoveg;
+    // font-size: @betu_nagy;
+    // line-height: 1.4;
+    // color: @sotet;
+    font-weight: 400;
+    background-color: #a6c5a3;
+}
+a {
+    // color: @vilagoskek;
+    text-decoration: none;
+}
+img {
+    display: block;
+}
+b, strong {
+    font-weight: 700;
+}
+i, em {
+    font-style: italic;
+}
+.middle {
+    margin: 0 auto;
+    width: @width;
+}
+li {
+    float: left;
+    width: @circle_size;
+    height: 500px;
+    padding: @padding;
+
+}
+.circle_a {
+    height: @circle_size;
+    background-color: blue;
+    display: block;
+    border-radius: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.text {
+    height: 200px;
+    margin-top: 30px;
+}
+
+img {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+h2 {
+    width: @circle_size;
+    height: @circle_size;
+    line-height: @circle_size;
+    font-size: 24px;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    color: transparent;
+    transition: 1s;
+
+    &:hover {
+        color: #fff;
+        background-color: rgba(236, 110, 78, 0.8);
+    }
+}
+
+
