@@ -1,5 +1,5 @@
 $('.text').hide();
 
-$('li').click(function(){
-    $(this).find('.text').slideToggle();
+$('.circle_a').click(function(){
+    $(this).next().slideToggle();
 })
