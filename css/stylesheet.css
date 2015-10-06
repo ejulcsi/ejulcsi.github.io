@@ -178,8 +178,12 @@ em {
   font-style: italic;
 }
 .middle {
-  margin: 0 auto;
   width: 900px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -260px;
+  margin-left: -450px;
 }
 li {
   float: left;
