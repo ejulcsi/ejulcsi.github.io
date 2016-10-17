@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -159,8 +159,11 @@ table {
 }
 body {
   font-weight: 400;
-  background-color: #a6c5a3;
+  background-image: linear-gradient(to right,#e4e633, #1e055d)
   font-family: 'Lato', sans-serif;
+}
+h1 {
+	font-size: 40px;
 }
 a {
   text-decoration: none;
