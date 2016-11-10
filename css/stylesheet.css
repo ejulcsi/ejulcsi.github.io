@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -158,74 +158,68 @@ table {
   zoom: 1;
 }
 body {
-  font-weight: 400;
-  background-image: linear-gradient(to right,#e4e633, #1e055d)
-  font-family: 'Lato', sans-serif;
-}
-h1 {
-	font-size: 40px;
-}
-a {
-  text-decoration: none;
-  color: #ec6e4e;
-}
-img {
-  display: block;
-}
-b,
-strong {
-  font-weight: 700;
-}
-i,
-em {
-  font-style: italic;
-}
-.middle {
-  width: 900px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -260px;
-  margin-left: -450px;
-}
-li {
-  float: left;
-  width: 280px;
-  height: 500px;
-  padding: 10px;
-}
-.circle_a {
-  height: 280px;
-  display: block;
-  border-radius: 100%;
-  position: relative;
-  overflow: hidden;
-}
-.text {
-  height: 200px;
-  margin-top: 30px;
-}
-.text p {
-  padding-bottom: 10px;
-}
-img {
   width: 100%;
-  position: absolute;
-  z-index: 1;
+  margin: 0;
+  background-image: linear-gradient(to right, #0d475e, #9b8008);
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
 }
-h2 {
-  width: 280px;
-  height: 280px;
-  line-height: 280px;
-  font-size: 24px;
-  font-weight: 700;
-  position: absolute;
-  z-index: 2;
-  text-align: center;
-  color: transparent;
-  transition: 1s;
+.space {
+  width: 200px;
+  height: 200px;
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  perspective: 800px;
 }
-h2:hover {
-  color: #fff;
-  background-color: rgba(236, 110, 78, 0.8);
+.tetra {
+  display: block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  font-size: 100px;
+  transform-style: preserve-3d;
+  animation: rotate 10s linear infinite;
+}
+.triangle {
+  position: absolute;
+  bottom: 0;
+  border-bottom: 1.73em solid rgba(255, 255, 255, 0.2);
+  border-left: 1em solid transparent;
+  border-right: 1em solid transparent;
+}
+.front {
+  transform: rotateX(19.4deg);
+  transform-origin: 0 100% 0;
+}
+.left {
+  transform: rotateY(60deg) rotateX(-19.4deg);
+  transform-origin: 0 100% 0;
+}
+.right {
+  transform: rotateY(-60deg) rotateX(-19.4deg);
+  transform-origin: 100% 100% 0;
+}
+.bottom {
+  transform: rotateX(90deg);
+  transform-origin: 0 100% 0;
+}
+@keyframes rotate {
+  0% {
+    transform: rotateX(0) rotateY(0) rotateZ(0);
+  }
+  100% {
+    transform: rotateX(0) rotateY(360deg) rotateZ(0);
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

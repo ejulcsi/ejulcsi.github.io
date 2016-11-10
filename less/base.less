@@ -1,81 +1,86 @@
-@width: 900px;
-@padding: 10px;
-@circle_size: @width / 3 - 2 * @padding;
 
 body {
-    // font-family: @font_szoveg;
-    // font-size: @betu_nagy;
-    // line-height: 1.4;
-    // color: @sotet;
-    font-weight: 400;
-    background-color: #a6c5a3;
-    font-family: 'Lato', sans-serif;
-}
-a {
-    text-decoration: none;
-    color: rgb(236, 110, 78);
-}
-img {
-    display: block;
-}
-b, strong {
-    font-weight: 700;
-}
-i, em {
-    font-style: italic;
-}
-.middle {
-    width: @width;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -260px;
-    margin-left: -@width/2;
-}
-li {
-    float: left;
-    width: @circle_size;
-    height: 500px;
-    padding: @padding;
-
-}
-.circle_a {
-    height: @circle_size;
-    display: block;
-    border-radius: 100%;
-    position: relative;
-    overflow: hidden;
-}
-.text {
-    height: 200px;
-    margin-top: 30px;
+  width: 100%;
+  margin: 0;
+  background-image:
+    linear-gradient(
+      to right,
+      hsla(197, 76%, 21%, 1), hsla(49, 90%, 32%, 1)
+    );
+  background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
 }
 
-.text p {
-    padding-bottom: 10px;
+
+.space {
+  width: 200px;
+  height: 200px;
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  perspective: 800px;
 }
 
-img {
-    width: 100%;
-    position: absolute;
-    z-index: 1;
-}
-h2 {
-    width: @circle_size;
-    height: @circle_size;
-    line-height: @circle_size;
-    font-size: 24px;
-    font-weight: 700;
-    position: absolute;
-    z-index: 2;
-    text-align: center;
-    color: transparent;
-    transition: 1s;
-
-    &:hover {
-        color: #fff;
-        background-color: rgba(236, 110, 78, 0.8);
-    }
+.tetra {
+  display: block;
+  position: relative;
+  width:  200px;
+  height:  200px;
+  font-size: 100px;
+  transform-style: preserve-3d;
+  animation: rotate 10s linear infinite;
 }
 
+.triangle {
+  position: absolute;
+  bottom: 0;
+  border-bottom: 1.73em solid rgba(255, 255, 255, .2);
+  border-left: 1em solid transparent;
+  border-right: 1em solid transparent;
+
+}
+
+.front {
+  transform: rotateX(19.4deg);
+  transform-origin: 0 100% 0;
+}
+
+.left {
+  transform: rotateY(60deg) rotateX(-19.4deg);
+  transform-origin: 0 100% 0;
+}
+
+.right {
+    transform: rotateY(-60deg) rotateX(-19.4deg);
+    transform-origin: 100% 100% 0;
+}
+
+.bottom {
+  transform: rotateX(90deg);
+  transform-origin: 0 100% 0;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateX(0) rotateY(0) rotateZ(0);
+  }
+
+  100% {
+    transform: rotateX(0) rotateY(360deg) rotateZ(0);
+  }
+}
+
+
+
+@keyframes gradient {
+   0% {
+     background-position: 0% 50%;
+  }
+    50% {
+      background-position: 100% 50%;
+  }
+    100% {
+      background-position: 0% 50%;
+  }
+}
 
