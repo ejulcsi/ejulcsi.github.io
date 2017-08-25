@@ -158,28 +158,44 @@ table {
   zoom: 1;
 }
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
+  padding: 50px;
   margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Lato', sans-serif;
   background-image: linear-gradient(to right, #0d475e, #9b8008);
   background-size: 400% 400%;
   animation: gradient 20s ease infinite;
+  box-sizing: border-box;
 }
 .space {
   width: 200px;
   height: 200px;
-  margin-top: 200px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 60px;
   perspective: 800px;
+}
+@media (max-width: 480px) {
+  .space {
+    width: 120px;
+    height: 120px;
+  }
 }
 .tetra {
   display: block;
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   font-size: 100px;
   transform-style: preserve-3d;
   animation: rotate 10s linear infinite;
+}
+@media (max-width: 480px) {
+  .tetra {
+    font-size: 60px;
+  }
 }
 .triangle {
   position: absolute;
@@ -203,6 +219,113 @@ body {
 .bottom {
   transform: rotateX(90deg);
   transform-origin: 0 100% 0;
+}
+.intro {
+  width: 100%;
+}
+.intro h1 {
+  font-size: 40px;
+}
+.intro h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.intro h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.intro a {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+.intro a:hover .triangle-wrapper {
+  transform: scale(1.1);
+}
+.intro p {
+  font-size: 16px;
+}
+.intro .title {
+  margin-bottom: 30px;
+}
+.intro .title p {
+  font-size: 22px;
+}
+.intro .sections {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+.intro .sections section {
+  flex: 1;
+  margin-right: 30px;
+}
+.intro .sections section:last-of-type {
+  margin-right: 0;
+}
+@media (min-width: 769px) {
+  .intro .sections section:not(:first-of-type) .section-title {
+    margin-bottom: 64px;
+  }
+}
+.intro .sections ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 20px;
+}
+@media (max-width: 480px) {
+  .intro .sections ul,
+  .intro .sections ul.social {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.intro .sections ul li {
+  flex: 1;
+  margin-right: 10px;
+  text-align: center;
+}
+.intro .sections ul li:nth-of-type(2n) .triangle {
+  border-bottom: none;
+  border-top: 1.73em solid rgba(255, 255, 255, 0.2);
+}
+.intro .sections ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.5);
+  transition: color .4s ease;
+}
+.intro .sections ul li a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+.intro .sections ul .triangle-wrapper {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+  transition: transform .6s ease;
+}
+.intro .sections .social {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.intro .sections .social a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 20px;
+  opacity: 0.2;
+  transition: opacity .4s ease;
+}
+.intro .sections .social a:hover {
+  opacity: 0.5;
+}
+.intro .sections .social img {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .intro .sections {
+    flex-direction: column;
+  }
 }
 @keyframes rotate {
   0% {
