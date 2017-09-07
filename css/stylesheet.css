@@ -277,7 +277,7 @@ body {
 }
 .intro .sections ul li {
   width: calc(25% - 10px);
-  flex: 1 1 auto;
+  flex: 0 1 auto;
   margin-right: 10px;
   text-align: center;
 }
