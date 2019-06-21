@@ -1,120 +1,87 @@
 <!doctype html>
 <html>
 <head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>julcsi.eu</title>
-	<link rel="stylesheet" href="css/stylesheet.css">
-	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>julcsi.eu</title>
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<div class="space">
-	<div class="tetra">
-		<div class="triangle front"></div>
-		<div class="triangle right"></div>
-		<div class="triangle left"></div>
-		<div class="triangle bottom"></div>
-	</div>
-</div>
-<div class="intro">
-	<div class="title">
-		<h1>Júlia Erő</h1>
-		<p>frontend developer</p>
-	</div>
-	<div class="sections">
-		<section>
-			<h2 class="section-title">Works</h2>
-			<h3>company works</h3>
-			<ul>
-				<li>
-					<a href="https://global.astonmartin.com/">
-						<div class="triangle-wrapper"><div class="triangle"></div></div>
-						<p>Aston Martin</p>
-					</a>
-				</li>
-				<li>
-					<a href="https://www.wpp.com/wppedcream/2016/">
-						<div class="triangle-wrapper"><div class="triangle"></div></div>
-						<p>WPPed Cream</p>
-					</a>
-				</li>
-				<li>
-					<a href="http://wppstream.com/">
-						<div class="triangle-wrapper"><div class="triangle"></div></div>
-						<p>WPP Stream</p>
-					</a>
-				</li>
-				<li>
-					<a href="https://www.parodontax.de/">
-						<div class="triangle-wrapper"><div class="triangle"></div></div>
-						<p>GSK - Parodontax</p>
-					</a>
-				</li>
-			</ul>
-			<h3>own works</h3>
-			<ul>
-				<li>
-					<a href="http://kek.org.hu/">
-						<div class="triangle-wrapper"><div class="triangle"></div></div>
-						<p>KÉK</p>
-					</a>
-				</li>
-				<li>
-					<a href="http://nanavizio.hu/">
-						<div class="triangle-wrapper"><div class="triangle"></div></div>
-						<p>Nanavízió</p>
-					</a>
-				</li>
-			</ul>
-		</section>
-		<section>
-			<h2 class="section-title">Experiments</h2>
-			<ul>
-				<li>
-					<a href="/audiowaves">
-						<div class="triangle-wrapper"><div class="triangle"></div></div>
-						<p>Audiowaves</p>
-					</a>
-				</li>
-				<li>
-					<a href="/polyhedron-galaxy">
-						<div class="triangle-wrapper"><div class="triangle"></div></div>
-						<p>Polyhedron galaxy</p>
-					</a>
-				</li>
-			</ul>
-		</section>
-		<section>
-			<h2 class="section-title">Contact</h2>
-			<ul class="social">
-				<li>
-					<a href="mailto:ejulcsi@gmail.com">
-						<img src="images/mail_icon.svg">
-					</a>
-				</li>
-				<li>
-					<a href="https://twitter.com/plankt0ne">
-						<img src="images/tw_icon.svg">
-					</a>
-				</li>
-				<li>
-					<a href="https://codepen.io/planktone/">
-						<img src="images/cp_icon.svg">
-					</a>
-				</li>
-				<li>
-					<a href="https://www.linkedin.com/in/juliaero/">
-						<img src="images/li_icon.svg">
-					</a>
-				</li>
-				<li>
-					<a href="https://www.instagram.com/plank.tone/">
-						<img src="images/ins_icon.svg">
-					</a>
-				</li>
-			</ul>
-		</section>
-	</div>
-</div>
+<nav>
+  <a href="#home" class="active">home</a>
+  <a href="#about">about</a>
+  <a href="#works">works</a>
+  <a href="#fun">fun</a>
+  <a href="#contact">contact</a>
+</nav>
+<section id="home">
+  <div class="title">
+    <h1>Júlia Erő</h1>
+    <p>frontend developer</p>
+  </div>
+
+  <div class="container">
+    <div class="wrapper left">
+      <div class="circle">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+    <div class="wrapper right">
+      <div class="circle">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="about">
+  <div class="text">
+    <h1>About</h1>
+    <p>I'm Julia based in Budapest, working as a frontend developer. I also like spending my time with hiking, climbing and dancing.</p>
+  </div>
+</section>
+<section id="works">
+  <div class="text">
+    <h1>Works</h1>
+    <p>I have 3-4 years experiences. I've worked at an agency for <a href="https://sites.wpp.com/wppedcream/2016" target="_blank">various</a> <a href="https://www.astonmartin.com/" target="_blank">clients</a>, at a software-developer company I took part in developing microservices, <a href="https://github.com/euedge/awesome-login" target>authentication</a> and webshop interfaces. I've also tasted <a href="https://www.augmint.org/" target="_blank">a bit</a> of a <a href="https://decent.org/" target="_blank">labs</a> environment. I carry <a href="http://nanavizio.hu" target="_blank">projects</a> as a freelancer as well.</p>
+    <p>Skills:</p>
+    <ul>
+      <li>Javascript, Vue, React, PWA</li>
+      <li>NodeJS, MongoDB</li>
+      <li>Python, Django</li>
+      <li>AWS, firebase</li>
+    </ul>
+  </div>
+</section>
+<section id="fun">
+  <div class="text">
+    <h1>Fun</h1>
+    <p>I really like music, so I spent some time to play around with musicology.</p>
+    <ul>
+      <li><a href="http://julcsi.eu/music-o-meter" target="_blank">music-o-meter</a></li>
+      <li><a href="http://julcsi.eu/roundbeats" target="_blank">roundbeats</a></li>
+      <li><a href="http://julcsi.eu/repe-tone" target="_blank">repetone</a></li>
+    </ul>
+  </div>
+</section>
+<section id="contact">
+  <div class="text">
+    <h1>Contact</h1>
+    <p>Feel free to send me an <a href="mailto:ejulcsi@gmail.com">
+      email</a> or contact me on <a href="https://www.linkedin.com/in/juliaero/">
+      linkedIn.</a></p>
+  </div>
+</section>
+<script src="js/script.js"></script>
 </body>
 </html>
