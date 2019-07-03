@@ -93,6 +93,14 @@ section .text a:visited {
     transform: translateY(-50%);
 }
 
+@media (max-width: 1024px) and (min-width: 769px) {
+    .container {
+        width: 50vh;
+        height: 50vh;
+    }
+}
+
+
 @media (max-width: 768px) {
     nav {
         position: absolute;
@@ -132,6 +140,7 @@ section .text a:visited {
 
 
 }
+
 
 
 @media (max-width: 600px) {
