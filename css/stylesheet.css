@@ -212,6 +212,7 @@ section .text a:visited {
     right: 0;
     bottom: 0;
     transform: translateY(50%);
+    background: rgba(230, 128, 26, 0.23);
 }
 
 .left .dot {
@@ -219,95 +220,42 @@ section .text a:visited {
     top: 0;
     transform: translateY(-50%);
     mix-blend-mode: difference;
+    background: rgba(32, 104, 248, 0.23);
 }
 
 .dot:nth-child(1) {
     width: calc((1 / 6) * 100%);
     height: calc((1 / 6) * 200%);
     z-index: 1;
-    background: rgba(0, 0, 0, 0.1);
-}
-
-.right .dot:nth-child(1) {
-    background: rgba(230, 128, 26, 0.23);
-}
-
-.left .dot:nth-child(1) {
-    background: rgba(32, 104, 248, 0.23);
 }
 
 .dot:nth-child(2) {
     width: calc((2 / 6) * 100%);
     height: calc((2 / 6) * 200%);
     z-index: 2;
-    background: rgba(0, 0, 0, 0.1);
 }
 
-.right .dot:nth-child(2) {
-    background: rgba(230, 128, 26, 0.23);
-}
-
-.left .dot:nth-child(2) {
-    background: rgba(32, 104, 248, 0.23);
-}
 
 .dot:nth-child(3) {
     width: calc((3 / 6) * 100%);
     height: calc((3 / 6) * 200%);
     z-index: 3;
-    background: rgba(0, 0, 0, 0.1);
-}
-
-.right .dot:nth-child(3) {
-    background: rgba(230, 128, 26, 0.23);
-}
-
-.left .dot:nth-child(3) {
-    background: rgba(32, 104, 248, 0.23);
 }
 
 .dot:nth-child(4) {
     width: calc((4 / 6) * 100%);
     height: calc((4 / 6) * 200%);
     z-index: 4;
-    background: rgba(0, 0, 0, 0.1);
-}
-
-.right .dot:nth-child(4) {
-    background: rgba(230, 128, 26, 0.23);
-}
-
-.left .dot:nth-child(4) {
-    background: rgba(32, 104, 248, 0.23);
 }
 
 .dot:nth-child(5) {
     width: calc((5 / 6) * 100%);
     height: calc((5 / 6) * 200%);
     z-index: 5;
-    background: rgba(0, 0, 0, 0.1);
-}
-
-.right .dot:nth-child(5) {
-    background: rgba(230, 128, 26, 0.23);
-}
-
-.left .dot:nth-child(5) {
-    background: rgba(32, 104, 248, 0.23);
 }
 
 .dot:nth-child(6) {
     width: calc((6 / 6) * 100%);
     height: calc((6 / 6) * 200%);
     z-index: 6;
-    background: rgba(0, 0, 0, 0.1);
 }
-
-.right .dot:nth-child(6) {
-    background: rgba(230, 128, 26, 0.23);
-}
-
-.left .dot:nth-child(6) {
-    background: rgba(32, 104, 248, 0.23);
-}
-
